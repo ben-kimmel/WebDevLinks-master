@@ -1,4 +1,4 @@
-<h2>Practicing with CSS Selectors</h2>
+<h2>CSS Property Basics</h2>
 <p>
-  There demos in here used in the lecture and some exercises for practice. 
+  Practicing with some of the day-to-day values used in CSS.
 </p>

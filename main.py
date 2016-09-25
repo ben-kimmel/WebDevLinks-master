@@ -24,8 +24,10 @@ class MainHandler(webapp2.RequestHandler):
 
         css_track = []
         css_track.append(("HTML Basics - Tag Practice", True, "/static/HtmlBasics/tagPractice", 10))  # These links won't work yet.  That's ok.
-        css_track.append(("CSS Basics - Primary Selector Practice", True, "/static/CssSelectors/primary_css_selector_exercises", 3)) 
-        css_track.append(("CSS Basics - Advanced Selector Practice", True, "/static/CssSelectors/advanced_selector_exercises", 3)) 
+        css_track.append(("CSS Basics - Primary Selector Practice", True, "/static/CssSelectors/primary_css_selector_exercises", 3))
+        css_track.append(("CSS Basics - Advanced Selector Practice", True, "/static/CssSelectors/advanced_selector_exercises", 3))
+        css_track.append(("CSS Basics - Font Practice", True, "/static/CssProperties/font_exercises", 3))
+        css_track.append(("CSS Basics - Background and Border Practice", True, "/static/CssProperties/background_and_border_exercises", 3))
         
         js_track = []
 
