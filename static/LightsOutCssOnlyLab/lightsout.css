@@ -1,0 +1,117 @@
+/* TODO: Add the CSS to the page here. */
+html {
+	background-image: url("background.png");
+	font: bold 2em "Comic Sans MS";
+	color: #FFFFFF;
+}
+
+.title {
+	text-align: center;
+	white-space: nowrap;
+}
+
+.light, .new-game-button {
+	background-image: url("buttons.png");
+}
+
+.light {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	background-position: -120px -230px;
+}
+
+.light:hover {
+	background-position: -10px -230px;
+}
+
+.new-game-button {
+	height: 100px;
+	width: 300px;
+	position: absolute;
+	margin-left: 250px;
+	margin-top: 750px;
+	text-align: center;
+	background-position: -10px -120px;
+	font-size: 1.2em;
+	line-height: 95px;
+}
+
+.new-game-button:hover {
+	background-position: -10px -10px;
+	color: #000000;
+}
+
+.container {
+	width: 500px;
+	height: 100px;
+	position: absolute;
+	margin-left: -250px;
+	left: 50%;
+}
+
+.light:nth-child(1) {
+	margin-left: 50px;
+	margin-top: 620px;
+}
+
+.light:nth-child(2) {
+	margin-left: 50px;
+	margin-top: 500px;
+}
+
+.light:nth-child(3) {
+	margin-left: 50px;
+	margin-top: 380px;
+}
+
+.light:nth-child(4) {
+	margin-left: 50px;
+	margin-top: 260px;
+}
+
+.light:nth-child(5) {
+	margin-left: 50px;
+	margin-top: 140px;
+}
+
+.light:nth-child(6) {
+	margin-left: 50px;
+	margin-top: 20px;
+}
+
+.light:nth-child(7) {
+	margin-left: 185px;
+	margin-top: 20px;
+}
+
+.light:nth-child(8) {
+	margin-left: 310px;
+	margin-top: 80px;
+}
+
+.light:nth-child(9) {
+	margin-left: 370px;
+	margin-top: 200px;
+}
+
+.light:nth-child(10) {
+	margin-left: 310px;
+	margin-top: 320px;
+}
+
+.light:nth-child(11) {
+	margin-left: 190px;
+	margin-top: 380px;
+}
+
+.light:nth-child(12) {
+	margin-left: 270px;
+	margin-top: 500px;
+}
+
+.light:nth-child(13) {
+	margin-left: 350px;
+	margin-top: 620px;
+}
+

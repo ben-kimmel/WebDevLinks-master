@@ -19,7 +19,7 @@ class MainHandler(webapp2.RequestHandler):
         appengine_track.append(("Weatherpics", False, "http://" + USERNAME + "-weatherpics.appspot.com"))
         appengine_track.append(("Exam 1 - (Exam title)", False, "http://" + USERNAME + "-(exam-title).appspot.com"))
         appengine_track.append(("Guestbook", False, "http://" + USERNAME + "-guestbook.appspot.com"))
-        appengine_track.append(("GradeRecorder", False, "http://" + USERNAME + "-grade-recorder.appspot.com"))
+        appengine_track.append(("GradeRecorder", False, "http://" + USERNAME + "-graderecorder.appspot.com"))
         appengine_track.append(("Dice with Friends", False, "http://" + USERNAME + "-dice-with-friends.appspot.com"))
 
         css_track = []
@@ -27,9 +27,16 @@ class MainHandler(webapp2.RequestHandler):
         css_track.append(("CSS Basics - Primary Selector Practice", True, "/static/CssSelectors/primary_css_selector_exercises", 3))
         css_track.append(("CSS Basics - Advanced Selector Practice", True, "/static/CssSelectors/advanced_selector_exercises", 3))
         css_track.append(("CSS Basics - Font Practice", True, "/static/CssProperties/font_exercises", 3))
-        css_track.append(("CSS Basics - Background and Border Practice", True, "/static/CssProperties/background_and_border_exercises", 3))
+        css_track.append(("CSS Basics - Background and Border Practice", True, "/static/CssProperties/background_and_border_exercises", 4))
+        css_track.append(("CSS Layout Basics - Display and Position Exercises", True, "/static/CssLayoutBasics/display_and_position_exercises", 3))
+        css_track.append(("CSS Layout Basics - Float Exercises", True, "/static/CssLayoutBasics/float_exercises", 3))
+        css_track.append(("CSS Layout Basics - Lights Out (CSS Only) Lab", False, "/static/LightsOutCssOnlyLab/lightsout.html"))
+
         
         js_track = []
+        js_track.append(("JavaScript Basics - Coffee Counter", False, "/static/JavaScriptBasics/CoffeeCounter/coffee.html"))
+        js_track.append(("JavaScript Basics - Color Converter Lab", False, "/static/JavaScriptBasics/ColorConverter/color_converter.html"))
+
 
         endpoints_ajax_track = []
 

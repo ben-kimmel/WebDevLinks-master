@@ -1,0 +1,30 @@
+#page-title {
+	margin: 15px 0;
+}
+
+#page-title,
+#color-output-text {
+	font: bold 2.5em Arial, sans-serif;
+}
+
+input[type=text] {
+	width: 50px;
+}
+
+#input-hex {
+	width: 200px;
+}
+
+.panel-body {
+	height: 200px;
+	background-color: #b50939
+}
+
+.progress {
+	position: relative;
+	top: 6px;
+}
+
+.progress > div {
+	padding: 0;
+}

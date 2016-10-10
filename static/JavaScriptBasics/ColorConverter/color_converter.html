@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Color Converter</title>
+		<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="stylesheet"
+		href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+		<link rel="stylesheet" type="text/css" href="color_converter.css">
+	</head>
+	<body>
+		<header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav"
+		role="banner">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" type="button" data-toggle="collapse"
+					data-target=".bs-navbar-collapse">
+						<span class="sr-only">Toggle navigation</span><span
+						class="icon-bar"></span><span class="icon-bar"></span><span
+						class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">Color Converter</a>
+				</div>
+				<nav class="collapse navbar-collapse bs-navbar-collapse"
+				role="navigation">
+					<ul class="nav navbar-nav navbar-right">
+						<button id="change-mode"type="button" class="btn btn-default navbar-btn btn-sm btn-primary">
+							Switch to Hex to RGB Converter
+						</button>
+					</ul>
+				</nav>
+			</div>
+		</header>
+
+		<div class="container">
+			<div class="jumbotron clearfix">
+				<div id="page-title">
+					Convert from RGB to Hex
+				</div>
+				<div id="rgb-to-hex-inputs" class="form-horizontal">
+					<div>
+						<label for="input-red" class="col-md-1 control-label">Red</label>
+						<div class="col-md-1 ">
+							<input type="text" class="form-control"
+							id="input-red" value="181" placeholder="255">
+						</div>
+						<div class="progress">
+							<div class="col-md-10 progress-bar progress-bar-danger"
+							id="red-bar" style="width: 71%"></div>
+						</div>
+					</div>
+					<div>
+						<label for="input-green" class="col-md-1 control-label">Green</label>
+						<div class="col-md-1">
+							<input type="text" size="3" maxlength="3" class="form-control"
+							id="input-green"  value="9" placeholder="255">
+						</div>
+						<div class="progress">
+							<div id="green-bar"  class="col-md-10 progress-bar progress-bar-success"
+							style="width: 3.5%"></div>
+						</div>
+					</div>
+					<div>
+						<label for="input-blue" class="col-md-1 control-label">Blue</label>
+						<div class="col-md-1">
+							<input type="text" size="3" maxlength="3" class="form-control"
+							id="input-blue" value="57" placeholder="255">
+						</div>
+						<div class="progress">
+							<div id="blue-bar" class="col-md-10 progress-bar progress-bar-primaryr"
+							style="width: 22.35%"></div>
+						</div>
+					</div>
+					<button id="convert-rgb-to-hex-button" type="button" class="btn btn-primary pull-right">
+						Convert to Hex
+					</button>
+				</div>
+
+				<div id="hex-to-rgb-inputs" class="hidden form-horizontal">
+					<div>
+						<label for="input-hex" class="col-md-2 control-label">Hex Value</label>
+						<div class="col-md-3">
+							<input type="text" class="form-control"
+							id="input-hex" value="#b50939" placeholder="#RRGGBB">
+						</div>
+					</div>
+					<button id="convert-hex-to-rgb-button" type="button" class="btn btn-primary pull-right">
+						Convert to RGB
+					</button>
+				</div>
+			</div>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div id="color-output-text" class="text-center">
+						#B50939
+					</div>
+				</div>
+				<div id="color-output-view" class="panel-body"></div>
+			</div>
+
+		</div>
+		</div>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script src="color_converter.js"></script>
+	</body>
+</html>
