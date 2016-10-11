@@ -28,10 +28,9 @@ class MainHandler(webapp2.RequestHandler):
         css_track.append(("CSS Basics - Advanced Selector Practice", True, "/static/CssSelectors/advanced_selector_exercises", 3))
         css_track.append(("CSS Basics - Font Practice", True, "/static/CssProperties/font_exercises", 3))
         css_track.append(("CSS Basics - Background and Border Practice", True, "/static/CssProperties/background_and_border_exercises", 4))
-        css_track.append(("CSS Layout Basics - Display and Position Exercises", True, "/static/CssLayoutBasics/display_and_position_exercises", 3))
-        css_track.append(("CSS Layout Basics - Float Exercises", True, "/static/CssLayoutBasics/float_exercises", 3))
+        css_track.append(("CSS Layout Basics - Display and Position Exercises", True, "/static/display_and_position_exercises", 3))
+        css_track.append(("CSS Layout Basics - Float Exercises", True, "/static/float_exercises", 3))
         css_track.append(("CSS Layout Basics - Lights Out (CSS Only) Lab", False, "/static/LightsOutCssOnlyLab/lightsout.html"))
-
         
         js_track = []
         js_track.append(("JavaScript Basics - Coffee Counter", False, "/static/JavaScriptBasics/CoffeeCounter/coffee.html"))
