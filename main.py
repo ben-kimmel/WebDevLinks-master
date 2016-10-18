@@ -21,6 +21,7 @@ class MainHandler(webapp2.RequestHandler):
         appengine_track.append(("Guestbook", False, "http://" + USERNAME + "-guestbook.appspot.com"))
         appengine_track.append(("GradeRecorder", False, "http://" + USERNAME + "-graderecorder.appspot.com"))
         appengine_track.append(("Dice with Friends", False, "http://" + USERNAME + "-dice-with-friends.appspot.com"))
+        appengine_track.append(("Text-Messenger", False, "http://kimmelbs-text-messenger.appspot.com/"))
 
         css_track = []
         css_track.append(("HTML Basics - Tag Practice", True, "/static/HtmlBasics/tagPractice", 10))  # These links won't work yet.  That's ok.
