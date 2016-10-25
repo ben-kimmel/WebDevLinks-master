@@ -1,0 +1,146 @@
+
+.color-0 {
+  background-color:rgb(255,255,0);
+}
+
+.color-1 {
+  background-color:rgb(152,253,178);
+}
+
+.color-2 {
+  background-color:rgb(255,115,255);
+}
+
+.color-3 {
+  background-color:rgb(115,249,249);
+}
+
+.color-4 {
+  background-color:rgb(199, 72, 72);
+}
+
+.color-5 {
+  background-color:rgb(226, 226, 20);
+}
+
+.color-6 {
+  background-color:rgb(153,204,255);
+}
+
+.color-7 {
+  background-color:rgb(255,77,77);
+}
+
+.color-8 {
+  background-color:rgb(0,255,255);
+}
+
+.color-9 {
+  background-color:rgb(147,255,38);
+}
+
+.author-angle-0 {
+    -moz-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+.author-angle-1 {
+    -moz-transform: rotate(-4deg);
+    -webkit-transform: rotate(-4deg);
+    transform: rotate(-4deg);
+}
+.author-angle-2 {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.author-angle-3 {
+    -moz-transform: rotate(-2deg);
+    -webkit-transform: rotate(-2deg);
+    transform: rotate(-2deg);
+}
+
+.author-angle-4 {
+    -moz-transform: rotate(-1deg);
+    -webkit-transform: rotate(-1deg);
+    transform: rotate(-1deg);
+}
+.author-angle-5 {
+    -moz-transform: rotate(1deg);
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+}
+.author-angle-6 {
+    -moz-transform: rotate(2deg);
+    -webkit-transform: rotate(2deg);
+    transform: rotate(2deg);
+}
+.author-angle-7 {
+    -moz-transform: rotate(3deg);
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+}
+
+.author-angle-8 {
+    -moz-transform: rotate(4deg);
+    -webkit-transform: rotate(4deg);
+    transform: rotate(4deg);
+}
+.author-angle-9 {
+    -moz-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+}
+
+.comment-angle-0 {
+    -moz-transform: rotate(-1.5deg);
+    -webkit-transform: rotate(-1.5deg);
+    transform: rotate(-1.5deg);
+}
+.comment-angle-1 {
+    -moz-transform: rotate(-1.2deg);
+    -webkit-transform: rotate(-1.2deg);
+    transform: rotate(-1.2deg);
+}
+.comment-angle-2 {
+    -moz-transform: rotate(-0.9deg);
+    -webkit-transform: rotate(-0.9deg);
+    transform: rotate(-0.9deg);
+}
+.comment-angle-3 {
+    -moz-transform: rotate(-0.6deg);
+    -webkit-transform: rotate(-0.6deg);
+    transform: rotate(-0.6deg);
+}
+
+.comment-angle-4 {
+    -moz-transform: rotate(-0.3deg);
+    -webkit-transform: rotate(-0.3deg);
+    transform: rotate(-0.3deg);
+}
+.comment-angle-5 {
+    -moz-transform: rotate(0.3deg);
+    -webkit-transform: rotate(0.3deg);
+    transform: rotate(0.3deg);
+}
+.comment-angle-6 {
+    -moz-transform: rotate(0.6deg);
+    -webkit-transform: rotate(0.6deg);
+    transform: rotate(0.6deg);
+}
+.comment-angle-7 {
+    -moz-transform: rotate(0.9deg);
+    -webkit-transform: rotate(0.9deg);
+    transform: rotate(0.9deg);
+}
+
+.comment-angle-8 {
+    -moz-transform: rotate(1.2deg);
+    -webkit-transform: rotate(1.2deg);
+    transform: rotate(1.2deg);
+}
+.comment-angle-9 {
+    -moz-transform: rotate(1.5deg);
+    -webkit-transform: rotate(1.5deg);
+    transform: rotate(1.5deg);
+}

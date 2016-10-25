@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 1</title>
+    <style type="text/css">
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+    }
+    body {
+      background: url('background.jpg');
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex-flow: column wrap;
+      flex-flow: column wrap;
+      -webkit-justify-content: space-between;
+      justify-content: space-between;
+    }
+    .box {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      background-image: -webkit-linear-gradient(transparent, rgba(100,100,100,0.75));
+      background-image: linear-gradient(transparent, rgba(100,100,100,0.75));
+    }
+    .box:nth-child(1) {
+      background-color: Aqua;
+    }
+    .box:nth-child(2) {
+      background-color: Sienna;
+    }
+    .box:nth-child(3) {
+      background-color: Turquoise;
+    }
+    .box:nth-child(4) {
+      background-color: OrangeRed;
+    }
+    .box:nth-child(5) {
+      background-color: LightSkyBlue;
+    }
+    .box:nth-child(6) {
+      background-color: Lime;
+    }
+    .box:nth-child(7) {
+      background-color: MidnightBlue;
+    }
+    .box:nth-child(8) {
+      background-color: YellowGreen;
+    }
+    .box:nth-child(9) {
+      background-color: Teal;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </body>
+</html>

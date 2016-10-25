@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Exercise 2</title>
+		<style>
+			html, body {
+				height: 100%;
+				margin: 0;
+				overflow: hidden;
+			}
+			body {
+				display: -webkit-flex;
+				display: flex;
+				-webkit-justify-content: center;
+				justify-content: center;
+				-webkit-align-items: center;
+				align-items: center;
+			}
+			.box {
+				width: 200px;
+				height: 100px;
+				text-align: center;
+				font: 2.2em/100px "Comic Sans MS", sans;
+			}
+			.box {
+				/* New decorative */
+				border-top-left-radius: 30px;
+				border-bottom-right-radius: 30px;
+				box-shadow: inset 0 0 30px 5px gray;
+			}
+			.box:hover {
+				box-shadow: inset 0 0 30px 5px gray, 0 0 15px 5px yellow;
+				background-image: -webkit-linear-gradient(-45deg, #800, #300);
+				background-image: linear-gradient(-45deg, #800, #300);
+				line-height: 102px;
+			}
+			.box:active {
+				background-image: -webkit-linear-gradient(-45deg, #e00, #700);
+				background-image: linear-gradient(-45deg, #e00, #700);
+				line-height: 105px;
+			}
+			.box {
+				/* Old decorative */
+				background-image: -webkit-linear-gradient(-45deg, #a00, #500);
+				background-image: linear-gradient(-45deg, #a00, #500);
+				border: 2px solid #333;
+				color: white;
+				text-shadow: 2px 2px 5px gray;
+				-webkit-user-select: none;
+				-moz-user-select: none;
+				user-select: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			Center
+		</div>
+	</body>
+</html>

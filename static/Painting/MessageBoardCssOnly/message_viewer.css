@@ -1,0 +1,71 @@
+
+/** 
+ * Add CSS here that relates to the message-viewer div + children.
+ */
+
+
+#message-viewer {
+	/* I choose to make this a row flexbox with items centered along the main axis. */
+}
+
+ol {
+	/* I made this a flex 1 child of the flexbox with a max-width of 660px. */
+	/* I made the list style none. */
+	/* I removed the margin and padding (set to 0) from a default ol. */
+}
+
+ol:first-child {
+	/* To move the list down some I made an 85px top margin on the first li item. */
+}
+
+.message {
+	/* I made the message a row flexbox with center on the cross-axis. */
+	/* I added an 8px margin on the message box. */
+}
+
+.message:hover {
+	/* Free CSS.  No need to add or change anything. */
+  -webkit-transform: scale(1.1);
+  -webkit-transition: all 0.25s;
+}
+  
+.author {
+	/* Created a gradient on an angle.  Use background-image property.  Tip: It's easier to see the solution gradient if you make img elements visibility hidden so you can see the gradient better on the solution. */
+	/* Border radius of 15px */
+	/* Box shadow outside of semi-transparent black, even a small inset box shadow using #444. */
+  font-size: 84%;
+  padding: 0 2px 5px;
+  text-align: center;
+  width: 100px;	
+}
+
+.author img {
+	/* Border radius 10px */
+	/* Box shadow on the image semi-transparent black. */
+  margin-top: 10px;
+}
+
+h4 {
+  margin: 0;
+  font: 100% normal Arial, Helvetica, sans-serif;
+  line-height: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.comment p {
+	/* No margin. */
+	/* Padding of 8px only on the left. */
+}
+
+.comment {
+	/* Flex of 1 to take up all the extra message space. */
+	/* Border radius of 10px. */
+	/* Box shadow outside of semi-transparent black, even a small inset box shadow using #444. */
+	/* Padding I used was 15px on the sides, 10px on top, and 5px on bottom. */
+	/* Margin of 10px on the sides. */
+	/* Add this rule to allow long words to break if needed (new CSS3 rule). */
+  /* word-wrap: break-word; */
+  /* Create a gradient from top to bottom over the color using a background-image. */
+}

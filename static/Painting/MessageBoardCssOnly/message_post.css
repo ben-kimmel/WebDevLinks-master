@@ -1,0 +1,47 @@
+
+/** 
+ * Add CSS here that relates to the message-post div + children.
+ */
+
+
+#message-post {
+	/* Made this a row flexbox with the one item in it centered along the main-axis. */
+	/* Made the position fixed to the top with 100% width. */
+	/* Make the z index greater than 1 to put this post controller on top of the existing messages. */
+}
+
+.post-backdrop {
+	/* flex of 1 to stretch within parents flexbox, but a max-width of 660px. */
+	/* In addition to being a child in a flexbox.  This div is also a row flexbox. */
+	/* No need to set main-axis alignment, but cross-axis alignment should be center. */
+  /* Add a gradient background (top is #963737, bottom is black). */
+  /* bottom left and bottom right have a border radius of 10px */
+  /* Box shadow using black x=0 y=0 size=40px blur=10px */
+  height: 68px;
+}
+
+.img-wrapper {
+	width: 100px;
+	/* Explicitly set flex property to none.  I don't stretch. */
+	/* However I am a flexbox.  Center one child along the main-axis. */
+}
+
+.post-backdrop img {
+	/* I'm the image up top.  My size was set in html attributes. */
+	/* border radius of 10px */
+	/* Used two box shadows.  One is a 1px outline (used insted of border to make it follow the radius.) */
+	/* The second box shadow is a gray.  I used rgba(150,150,150,0.75) */
+  -moz-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  transform: rotate(-2deg);
+}
+
+#post-input {
+	/* Flex of 1 to fill all the remaining space in the backdrop */
+	/* solid 2px darkgrey border */
+	/* border radius of 8px */
+  font: 14px/20px Arial, san-serif;
+  /* margin on the right of 15px */
+  /* Padding on the left of 7px */
+  /* Set outline to none to avoid the orange box when selected. */
+}

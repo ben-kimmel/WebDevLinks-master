@@ -31,11 +31,18 @@ class MainHandler(webapp2.RequestHandler):
         css_track.append(("CSS Basics - Background and Border Practice", True, "/static/CssProperties/background_and_border_exercises", 4))
         css_track.append(("CSS Layout Basics - Display and Position Exercises", True, "/static/display_and_position_exercises", 3))
         css_track.append(("CSS Layout Basics - Float Exercises", True, "/static/float_exercises", 3))
-        css_track.append(("CSS Layout Basics - Lights Out (CSS Only) Lab", False, "/static/LightsOutCssOnlyLab/lightsout.html"))
+        css_track.append(("CSS Layout Basics - Lights Out (CSS Only) Lab", False, "/static/LightsOutCssOnlyLab/lightsout.html"))        
+        css_track.append(("Painting - Stacking Context Exercises", True, "/static/Painting/stacking_context_exercises", 3))
+        css_track.append(("Painting - Gradient Exercises", True, "/static/Painting/gradient_exercises", 3))
+        css_track.append(("Painting - Box Shadow Exercises", True, "/static/Painting/box_shadow_radius_exercises", 3))
+
         
         js_track = []
         js_track.append(("JavaScript Basics - Coffee Counter", False, "/static/JavaScriptBasics/CoffeeCounter/coffee.html"))
         js_track.append(("JavaScript Basics - Color Converter Lab", False, "/static/JavaScriptBasics/ColorConverter/color_converter.html"))
+        js_track.append(("JavaScript Objects - Dice Without Friends", False, "/static/JavaScriptObjects/DiceWithoutFriends/play.html"))
+        js_track.append(("JavaScript Objects - Lights Out", False, "/static/JavaScriptObjects/LightsOut/lightsout.html"))
+
 
 
         endpoints_ajax_track = []
