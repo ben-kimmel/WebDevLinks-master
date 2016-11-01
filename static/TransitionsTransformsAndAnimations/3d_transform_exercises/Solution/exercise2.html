@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 2</title>
+    <style type="text/css">
+      html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      body {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column;
+        flex-flow: column;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+      }
+	    .wrapper {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: space-around;
+        justify-content: space-around;
+	    }
+	    .box {
+	      width: 100px;
+	      height: 100px;
+        box-sizing: border-box;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
+        -webkit-transform-origin: 50% 50% 0%;
+        transform-origin: 50% 50% 0%;
+	    }
+	    body {
+        -webkit-perspective: 300px;
+        perspective: 300px;
+        -webkit-perspective-origin: 50% 50%;
+        perspective-origin: 50% 50%;
+	    }
+	    .box-wrapper:hover .box {
+	      /*
+        -webkit-transform: translateX(100px);
+        transform: translateX(100px);
+        */
+        /*
+        -webkit-transform: translateY(100px);
+        transform: translateY(100px);
+        */
+        /*
+        -webkit-transform: translateZ(-100px);
+        transform: translateZ(-100px);
+        */
+        -webkit-transform: translateZ(100px);
+        transform: translateZ(100px);
+	    }
+      .box {
+        /* Decorative */
+        border: 2px solid #333;
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px gray;
+        background-image: -webkit-linear-gradient(-45deg,  hsla(0,0%,100%,.75) 0%,hsla(0,0%,100%,0) 100%);
+        background-image: linear-gradient(135deg,  hsla(0,0%,100%,.75) 0%,hsla(0,0%,100%,0) 100%);
+      }
+      .red {
+        background-color: #800; /* red */
+      }
+      .yellow {
+        background-color: #cc0; /* yellow */
+      }
+      .green {
+        background-color: #080; /* green */
+      }
+      .blue {
+        background-color: #008; /* blue */
+      }      
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="box-wrapper"><div class="box red"></div></div>
+      <div class="box-wrapper"><div class="box yellow"></div></div>
+      <div class="box-wrapper"><div class="box green"></div></div>
+      <div class="box-wrapper"><div class="box blue"></div></div>
+    </div>
+    <div class="wrapper">
+      <div class="box-wrapper"><div class="box yellow"></div></div>
+      <div class="box-wrapper"><div class="box green"></div></div>
+      <div class="box-wrapper"><div class="box blue"></div></div>
+      <div class="box-wrapper"><div class="box red"></div></div>
+    </div>
+    <div class="wrapper">
+      <div class="box-wrapper"><div class="box green"></div></div>
+      <div class="box-wrapper"><div class="box blue"></div></div>
+      <div class="box-wrapper"><div class="box red"></div></div>
+      <div class="box-wrapper"><div class="box yellow"></div></div>
+    </div>
+    <div class="wrapper">
+      <div class="box-wrapper"><div class="box blue"></div></div>
+      <div class="box-wrapper"><div class="box red"></div></div>
+      <div class="box-wrapper"><div class="box yellow"></div></div>
+      <div class="box-wrapper"><div class="box green"></div></div>
+    </div>
+  </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

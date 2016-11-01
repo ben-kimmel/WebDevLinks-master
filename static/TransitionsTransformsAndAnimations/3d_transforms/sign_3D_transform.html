@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>3D Transforms</title>
+    <style type="text/css">
+      html, body, .background, .wrapper {
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      .background,
+      .wrapper {
+        display: -webkit-flex;
+        display: flex;
+        position: absolute;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      .wrapper {
+        -webkit-flex-flow: column;
+        flex-flow: column;
+        font: 2em "Comic Sans MS", san-serif;
+        text-shadow: 2px 2px 4px lightgray;
+      }
+      .sign {
+        width: 300px;
+        height: 300px;
+        -webkit-transform: rotateZ(45deg);
+        transform: rotateZ(45deg);
+        border: 3px solid #333;
+        border-radius: 20px;
+        box-shadow: 0 0 0 2px lightgray, 0 0 0 4px black, 6px 2px 5px 3px gray;
+        background: -moz-linear-gradient(bottom,  hsla(45,78%,50%,1) 0%, hsla(34,85%,51%,1) 100%);
+        background: -webkit-linear-gradient(bottom,  hsla(45,78%,50%,1) 0%,hsla(34,85%,51%,1) 100%);
+        background: -o-linear-gradient(bottom,  hsla(45,78%,50%,1) 0%,hsla(34,85%,51%,1) 100%);
+        background: -ms-linear-gradient(bottom,  hsla(45,78%,50%,1) 0%,hsla(34,85%,51%,1) 100%);
+        background: linear-gradient(to top,  hsla(45,78%,50%,1) 0%,hsla(34,85%,51%,1) 100%);
+      }
+      html {
+        /* Perspectives are defined on the parent and can do some cool things. */
+        
+        /*
+        perspective: 50px;
+        perspective-origin: 10% 10%;
+        */
+      }
+      body {
+        -webkit-transition: all 2000ms ease;
+        transition: all 2000ms ease;
+        -webkit-transform-origin: 50% 100%;
+        transform-origin: 50% 100%;
+        -webkit-transform-style: preserve-3d;        
+        transform-style: preserve-3d;
+      }
+      :hover body {
+        -webkit-transform: rotateX(85deg) rotateY(25deg) translateZ(30px) scale3d(.5,.5,.5);
+        transform: rotateX(85deg) rotateY(25deg) translateZ(30px) scale3d(.5,.5,.5);
+      }
+      .middle-text {
+        opacity: 1;
+        height: 110px;
+        font-size: 80px;
+        font-weight: bold;
+      }
+	    </style>
+  </head>
+  <body>
+    <div class="background">
+      <div class="sign"></div>
+    </div>
+	  <div class="wrapper">
+      <div class="top-text">3D effects are</div>
+      <div class="middle-text">REALLY</div>
+      <div class="bottom-text">cool!</div>
+	  </div>
+  </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

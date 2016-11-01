@@ -35,6 +35,10 @@ class MainHandler(webapp2.RequestHandler):
         css_track.append(("Painting - Stacking Context Exercises", True, "/static/Painting/stacking_context_exercises", 3))
         css_track.append(("Painting - Gradient Exercises", True, "/static/Painting/gradient_exercises", 3))
         css_track.append(("Painting - Box Shadow Exercises", True, "/static/Painting/box_shadow_radius_exercises", 3))
+        css_track.append(("Transitions, Transforms, and, Animations - Transitions", True, "/static/TransitionsTransformsAndAnimations/transition_exercises", 3))
+        css_track.append(("Transitions, Transforms, and Animations - 2D Transforms", True, "/static/TransitionsTransformsAndAnimations/transform_exercises", 3))
+        css_track.append(("Transitions, Transforms, and Animations - 3D Transforms", True, "/static/TransitionsTransformsAndAnimations/3d_transform_exercises", 3))
+        css_track.append(("Transitions, Transforms, and Animations - Animations", True, "/static/TransitionsTransformsAndAnimations/keyframe_animation_exercises", 3))
 
         
         js_track = []
