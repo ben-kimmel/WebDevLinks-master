@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Flexbox transitions</title>
+    <style type="text/css">
+      html, body, .wrapper {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+	    .wrapper {
+	      position: absolute; 
+	      width: 90%;
+	      left: 5%;
+	      display: -webkit-flex;
+	      display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+	    }
+	    .box {
+	      height: 200px;
+	      -webkit-flex: 1;
+	      flex: 1;
+        transition: all 200ms ease-in-out;
+	    }
+	    .box:hover {
+        -webkit-flex: 3;
+        flex: 3;
+        height: 400px;
+	    }
+      .box:nth-child(1) {
+        background: blue;
+      }
+      .box:nth-child(2) {
+        background: rgba(0, 255, 0, 0.8);
+      }
+      .box:nth-child(3) {
+        background: rgba(255, 0, 0, 0.6);
+      }
+    </style>
+  </head>
+  <body>
+	  <div class="wrapper">
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	  </div>
+  </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

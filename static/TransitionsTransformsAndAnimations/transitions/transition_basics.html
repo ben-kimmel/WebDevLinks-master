@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Transition boxes</title>
+    <style type="text/css">
+	    .wrapper {
+	      position: absolute; 
+	      width: 90%;
+	      left: 5%;
+	    }
+	    .box {
+	      border: 1px solid rgba(100, 100, 100, 0.6);
+	      margin: 20px 0;
+	      width: 100px;
+	      height: 100px;
+	    }
+	    .box:hover {
+	      width: 100%; /* All boxes expand on hover */
+	    }
+	    
+	    /*  Animated width change */
+	    .box:nth-child(1) {
+	      background: blue;
+	      /*
+	      transition: width 1s ease-in-out;
+	      */
+	    }
+	    
+	    /*  Animated width AND color change */
+	    .box:nth-child(2) {
+	      background: rgba(0, 255, 0, 0.8);
+        /*
+	      transition: all 1000ms linear;
+	      */
+	    }    
+	    .box:nth-child(2):hover {
+	      background: rgba(255, 255, 0, 0.6);
+	    }
+	    
+	    /*  Staggered width and height change */
+	    .box:nth-child(3) {
+	      background: rgba(255, 0, 0, 0.6);
+	      /*
+	      transition: width 700ms ease-in, height 700ms 700ms ease-out;
+	      */
+	    }
+		  .box:nth-child(3):hover {
+		    height: 400px;
+	    }
+    </style>
+  </head>
+  <body>
+	  <div class="wrapper">
+	    <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	  </div>
+  </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

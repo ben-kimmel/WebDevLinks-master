@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Exercise 0</title>
+    <style type="text/css">
+      html, body {
+        height: 100%;
+        margin: 0;
+        overflow: hidden;
+      }
+      body {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+	    .wrapper {
+	      position: relative;
+        width: 80%;
+        height: 80%;
+        border: 1px dashed blue;
+	    }
+	    .box {
+	      position: absolute;
+	      width: 100px;
+	      height: 100px;
+        box-sizing: border-box;
+        -webkit-transition: all 1000ms ease;
+        transition: all 1000ms ease;
+	    }
+      .box:nth-child(1),
+      .wrapper:hover .box:nth-child(2) {
+        left: -webkit-calc(100% - 100px);
+        top: -webkit-calc(100% - 100px);
+      }
+      .box:nth-child(2),
+      .wrapper:hover .box:nth-child(3) {
+        left: -webkit-calc(100% - 100px);
+        top: 0;
+      }
+      .box:nth-child(3),
+      .wrapper:hover .box:nth-child(4) {
+        left: 0;
+        top: 0;
+      }
+      .box:nth-child(4),
+      .wrapper:hover .box:nth-child(1) {
+        left: 0;
+        top: -webkit-calc(100% - 100px);
+      }
+      .box {
+        /* Decorative */
+        border: 2px solid #333;
+        border-radius: 30px;
+        box-shadow: 2px 2px 5px gray;
+        background-image: -webkit-linear-gradient(-45deg,  hsla(0,0%,100%,.75) 0%,hsla(0,0%,100%,0) 100%);
+        background-image: linear-gradient(135deg,  hsla(0,0%,100%,.75) 0%,hsla(0,0%,100%,0) 100%);
+      }
+      .box:nth-child(1) {
+        background-color: #800; /* red */
+      }
+      .box:nth-child(2) {
+        background-color: #cc0; /* yellow */
+      }
+      .box:nth-child(3) {
+        background-color: #080; /* green */
+      }
+      .box:nth-child(4) {
+        background-color: #008; /* blue */
+      }      
+    </style>
+  </head>
+  <body>
+	  <div class="wrapper">
+      <div class="box"></div>
+      <div class="box"></div>
+	    <div class="box"></div>
+	    <div class="box"></div>
+	  </div>
+  </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

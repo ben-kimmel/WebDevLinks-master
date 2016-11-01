@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Transform demos</title>
+    <style type="text/css">
+      body {
+        overflow: hidden;
+      }
+	    #container {
+	      margin: 130px 0px 100px 100px;
+	      width: 650px;
+	      background-color: #800;
+	    }
+	    .outer-box {
+	      float: left;
+	      position: relative;
+        width:100px;
+        height: 100px;
+        background: #333; /* light blue */
+        display: block;
+        margin: 15px 0px;
+        font-weight: bold;
+        color: #6FA8DC; /* light blue */
+      }
+      .outer-box .inner-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        width:100px;
+        height: 100px;
+        display: block;
+	      -webkit-transition: all 700ms ease-in-out;
+	      transition: all 700ms ease-in-out;
+	    }
+	    .outer-box .inner-box:nth-child(1) {
+	      -webkit-transform-origin: 0 0;
+	       background: rgba(256, 0, 0, 0.8);
+	    }
+	    .outer-box .inner-box:nth-child(2) {
+	      -webkit-transform-origin: 100px 0;
+	      background: rgba(50, 200, 150, 0.8);          
+	    }
+	    .outer-box .inner-box:nth-child(3) {
+	      -webkit-transform-origin: 0 100px;
+	      background: rgba(0, 256, 0, 0.8);
+	    }
+	    .outer-box .inner-box:nth-child(4) {
+	      -webkit-transform-origin: 100px 100px;
+	      background: rgba(0, 100, 256, 0.8);
+	    }
+	    .outer-box:hover .inner-box {
+	      opacity: 1;
+	      -webkit-transform: rotate(90deg);
+	    }      
+	    .outer-circle {
+        margin: -35px 0px 0px 150px;
+        float: left;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background: #333;
+        border-radius: 100px;
+      }
+     .inner-circle:nth-child(1) {
+        height: 30px;
+        width: 30px;
+        background: orange;
+        border-radius: 15px;
+      }
+     .inner-circle:nth-child(2) {
+        height: 30px;
+        width: 30px;
+        background: rgba(50, 200, 150, 0.8);
+        border-radius: 15px;
+      }
+      .outer-circle {
+        margin: -35px 0px 0px 150px;
+        float: left;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        background: #333;
+        border-radius: 100px;
+      }            
+      .inner-circle-box:nth-child(1)  {
+        position: absolute;
+        width: 180px;
+        height: 30px;
+        /* border: 2px dotted #eee; */
+        margin: 0 auto;
+        top: 80px;
+        left: 5%;
+        -webkit-transition: all 2000ms linear;
+      }
+      .inner-circle-box:nth-child(2) {
+        position: absolute;
+        width: 120px;
+        height: 30px;
+        /* border: 2px dotted yellow; */
+        margin: 0 auto;
+        top: 80px;
+        left: 20%;
+        -webkit-transition: all 2000ms ease-in-out;
+        transition: all 2000ms ease-in-out;
+      }
+      .inner-circle-box:nth-child(1)  .inner-circle {
+        height: 30px;
+        width: 30px;
+        background: orange;
+        border-radius: 15px;
+      }
+      .inner-circle-box:nth-child(2) .inner-circle {
+        height: 30px;
+        width: 30px;
+        background: rgba(50, 200, 150, 0.8);
+        border-radius: 15px;
+      }
+      .outer-circle:hover .inner-circle-box:nth-child(1) {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+      .outer-circle:hover .inner-circle-box:nth-child(2) {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+      }
+    </style>
+  </head>
+  <body>
+     <div id="container">
+       <div class="outer-box">
+         <div class="inner-box"></div>
+         <div class="inner-box"></div>
+         <div class="inner-box"></div>
+         <div class="inner-box"></div>
+       </div>
+       <div class="outer-circle">
+          <div class="inner-circle-box">
+            <div class="inner-circle"></div>
+          </div>
+          <div class="inner-circle-box">
+            <div class="inner-circle"></div>
+          </div>
+        </div>
+    </div>  
+  </body>
+</html>
